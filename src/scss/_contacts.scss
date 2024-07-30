@@ -1,0 +1,245 @@
+.contacts {
+  position: relative;
+  background-color: #f6f6f6;
+  ;
+  // .contacts__inner
+
+  &__inner {}
+
+  // .contacts__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 0;
+
+    @media (max-width: $breakpoint1450) {
+      padding: 100px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 24px;
+      padding: 40px 0;
+    }
+  }
+
+  // .contacts__head
+
+  &__head {
+    flex: 0 1 630px;
+    max-width: 630px;
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .contacts__title
+
+  &__title {}
+
+  // .contacts__subtitle
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: var(--black);
+
+    @media (max-width: $breakpoint992) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .contacts__info
+
+  &__info {
+    flex: 0 1 480px;
+    padding: 8px 0 8px 30px;
+    border-left: 1px solid #00953e;
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .contacts__descr
+
+  &__descr {
+    font-size: 21px;
+    line-height: 140%;
+    color: #2e2e2e;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+  }
+
+  // .contacts__middle
+
+  &__middle {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -140px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: -100px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .contacts__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .contacts__item
+
+  &__item {
+    display: grid;
+  }
+
+  // .contacts__item-link
+
+  &__item-link {
+    display: grid;
+    row-gap: 24px;
+    padding: 46px;
+    min-height: 280px;
+    border-radius: 20px;
+    background-color: var(--white);
+    transition: 0.2s linear;
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--lite-green);
+
+        .contacts__item-icon {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7435%) hue-rotate(8deg) brightness(89%) contrast(117%);
+        }
+
+        .contacts__item-text {
+          color: var(--white);
+        }
+
+        .contacts__item-arrow {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7435%) hue-rotate(8deg) brightness(89%) contrast(117%);
+          transform: translateX(5px);
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint992) {
+      row-gap: 12px;
+      padding: 24px;
+      min-height: 200px;
+    }
+  }
+
+  // .contacts__item-icon
+
+  &__item-icon {
+    // transition: 0.2s linear;
+
+    @media (max-width: $breakpoint992) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  // .contacts__item-text
+
+  &__item-text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: var(--dark);
+    transition: 0.2s linear;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 18px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+    }
+  }
+
+  // .contacts__item-arrow
+
+  &__item-arrow {
+    margin-top: auto;
+    transition: 0.2s linear;
+  }
+
+  // .contacts__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    overflow: hidden;
+
+    @media (max-width: $breakpoint992) {
+      height: 400px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      height: 280px;
+    }
+  }
+
+  // .contacts__btn
+
+  &__btn {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+
+    @media (max-width: $breakpoint768) {
+      margin-top: 0;
+    }
+  }
+
+  // .contacts__bg
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    @media (max-width: $breakpoint992) {
+      height: 400px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      height: 280px;
+    }
+  }
+}

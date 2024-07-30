@@ -1,0 +1,41 @@
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  // .socials__item
+
+  &__item {}
+
+  // .socials__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 100%;
+    background-color: var(--dark);
+    transition: background-color 0.2s linear;
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--lite-green);
+
+        .socials__link-icon {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  // .socials__link-icon
+
+  &__link-icon {
+    width: auto;
+    height: auto;
+    transition: transform 0.2s linear;
+  }
+}

@@ -1,0 +1,57 @@
+.nav {}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+
+  @media (max-width: $breakpoint992) {
+    column-gap: 24px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+  }
+
+
+  // .menu__item
+
+  &__item {
+
+    &--mob {
+      display: none;
+
+      @media screen and (max-width: $burgerBreakpoint) {
+        display: flex;
+        width: 100%;
+      }
+    }
+  }
+
+  // .menu__link
+
+  &__link {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--lite);
+    transition: color 0.2s linear;
+
+    @media (hover:hover) {
+      &:hover {
+        color: var(--lite-green);
+      }
+    }
+
+    &.btn-outline {
+      width: 100%;
+      background: transparent;
+      border: 1px solid var(--white);
+    }
+
+    &.btn {
+      width: 100%;
+    }
+  }
+}
