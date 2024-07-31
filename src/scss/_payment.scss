@@ -3,15 +3,15 @@
   z-index: 2;
   margin-top: -40px;
 
-  margin-bottom: 140px;
+  // margin-bottom: 140px;
 
-  @media (max-width: $breakpoint992) {
-    margin-bottom: 60px;
-  }
+  // @media (max-width: $breakpoint992) {
+  //   margin-bottom: 40px;
+  // }
 
-  @media (max-width: $breakpoint768) {
-    margin-bottom: 30px;
-  }
+  // @media (max-width: $breakpoint768) {
+  //   margin-bottom: 30px;
+  // }
 
   // .payment__inner
 
@@ -24,6 +24,14 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 20px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   // .payment__item
@@ -47,7 +55,7 @@
     @media (hover:hover) {
       &:hover {
         background-color: var(--lite-green);
-        transform: translateY(-40px);
+        transform: translateY(-20px);
 
         .payment__img {}
 
@@ -56,12 +64,24 @@
         }
       }
     }
+
+    @media (max-width: $breakpoint992) {
+      padding: 20px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      min-height: 120px;
+    }
   }
 
   // .payment__img
 
   &__img {
     transition: 0.2s linear;
+
+    @media (max-width: $breakpoint768) {
+      max-width: 50%;
+    }
   }
 
   // .payment__text
@@ -75,5 +95,13 @@
     text-align: center;
     color: var(--black);
     transition: 0.2s linear;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
   }
 }

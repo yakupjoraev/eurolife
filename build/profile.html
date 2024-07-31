@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container">
+      <div class="navbar">
+        <a class="logo" href="#">
+          <img class="logo__img" width="154" height="38" src="./img/logo.svg" alt="logo icon">
+        </a>
+
+
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">MAIN</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">CONTACTS</a></li>
+
+          <li class="menu__item menu__item--mob"><a class="menu__link btn btn-outline" href="#">sign in</a></li>
+          <li class="menu__item menu__item--mob"><a class="menu__link btn" href="#">log in</a></li>
+        </ul>
+
+        <div class="nav__btns">
+          <a class="nav__btn btn btn-outline" href="#">sign in</a>
+          <a class="nav__btn btn" href="#">log in</a>
+        </div>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <!-- Main Page -->
+    <main>
+      <section class="subhero subhero--profile">
+  <div class="container">
+    <div class="subhero__inner">
+      <div class="subhero__info">
+        <h1 class="subhero__title" hidden>Profile</h1>
+
+        <form class="subhero__form" action="#">
+          <div class="subhero__form-file">
+            <input class="subhero__file-input" type="file" id="file-input">
+
+            <label class="subhero__file-label" for="file-input">
+              <img class="subhero__file-pic" width="96" height="96" src="./img/icons/Gallery Add.svg"
+                alt="Gallery Add icon">
+
+              <p class="subhero__file-text">Upload the cover to your profile. Jpeg format, no more than 10 MB in size
+              </p>
+
+              <div class="subhero__file-btn btn">upload cover</div>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <img class="subhero__line" width="266" height="210" src="./img/icons/subhero-line.svg" alt="line pic">
+    </div>
+  </div>
+</section>
+      <div class="profile">
+  <div class="container">
+    <div class="profile__inner">
+      <form class="profile__form" action="#">
+        <div class="settings__head">
+          <h2 class="settings__title">Your Profile</h2>
+        </div>
+
+        <div class="settings__main">
+          <div class="settings__rows">
+            <div class="settings__row">
+              <label class="settings__label label" for="">First name and last name<sup>*</sup></label>
+
+              <input class="settings__input input" type="text" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">Country</label>
+
+              <input class="settings__input input" type="text" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">Language</label>
+
+              <input class="settings__input input" type="text" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">E-mail<sup>*</sup></label>
+
+              <input class="settings__input input" type="email" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">Phonel<sup>*</sup></label>
+
+              <input class="settings__input input" type="text" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <div class="settings__checkbox checkbox">
+                <input class="settings__checkbox-input checkbox-input" type="checkbox" id="checkbox-3">
+                <label class="settings__checkbox-label checkbox-label" for="checkbox-3">
+                  <div class="settings__checkbox-decor checkbox-decor"></div>
+                  <p class="settings__checkbox-text checkbox-text">I consent to the processing of my personal data
+                    contained in the contact form by EuroLife in order to respond to the inquiry.</p>
+                </label>
+              </div>
+
+              <div class="settings__checkbox checkbox">
+                <input class="settings__checkbox-input checkbox-input" type="checkbox" id="checkbox-4">
+                <label class="settings__checkbox-label checkbox-label" for="checkbox-4">
+                  <div class="settings__checkbox-decor checkbox-decor"></div>
+                  <p class="settings__checkbox-text checkbox-text">I declare that my consent is voluntary. I am aware
+                    that I can withdraw my consent
+                    at any time.</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings__footer">
+          <button type="submit" class="settings__btn settings__btn--mla btn">
+            Send and pay
+
+            <img width="24" height="24" src="./img/icons/arrow-right.svg" alt="arrow-right icon">
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+      <section class="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+      <div class="contacts__top">
+        <div class="contacts__head">
+          <h2 class="contacts__title section-title">Contacts</h2>
+          <h3 class="contacts__subtitle">
+            Contact <br />
+            with EuroLife Chz.
+          </h3>
+        </div>
+
+        <div class="contacts__info">
+          <p class="contacts__descr">Contact us via the form and you will receive an answer to any question within 4
+            hours!</p>
+        </div>
+      </div>
+
+      <div class="contacts__middle">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__item-link" href="#">
+              <img class="contacts__item-icon" width="50" height="50" src="./img/icons/help_circle_outline.svg"
+                alt="help icon">
+
+              <p class="contacts__item-text">Are you looking for a trusted partner
+                in raise your career</p>
+
+              <img class="contacts__item-arrow" width="24" height="24" src="./img/icons/short_right.svg"
+                alt="arrow right icon">
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a class="contacts__item-link" href="#">
+              <img class="contacts__item-icon" width="50" height="50" src="./img/icons/green-man.svg" alt="help icon">
+
+              <p class="contacts__item-text">Are you looking for someone who will provide everything your business
+                needs?</p>
+
+              <img class="contacts__item-arrow" width="24" height="24" src="./img/icons/short_right.svg"
+                alt="arrow right icon">
+            </a>
+          </li>
+
+          <li class="contacts__item">
+            <a class="contacts__item-link" href="#">
+              <img class="contacts__item-icon" width="50" height="50" src="./img/icons/green-search.svg"
+                alt="help icon">
+
+              <p class="contacts__item-text">Are you looking for a company that will take care of all your problems?</p>
+
+              <img class="contacts__item-arrow" width="24" height="24" src="./img/icons/short_right.svg"
+                alt="arrow right icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contacts__bottom">
+        <a class="contacts__btn btn" href="#">Submit an application 5 EUR</a>
+
+        <picture>
+          <source srcset="./img/contacts/contacts-pic.webp 1x, ./img/contacts/contacts-pic@2x.webp 2x"
+            type="image/webp">
+          <source srcset="./img/contacts/contacts-pic.jpg 1x, ./img/contacts/contacts-pic@2x.jpg 2x" type="image/jpeg">
+          <img class="contacts__bg" src="./img/contacts/contacts-pic.jpg" srcset="./img/contacts/contacts-pic@2x.jpg"
+            alt="Alt">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <a class="logo" href="#">
+          <img class="logo__img" width="154" height="38" src="./img/logo.svg" alt="logo icon">
+        </a>
+
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">MAIN</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">CONTACTS</a></li>
+          </ul>
+        </nav>
+
+        <ul class="socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__link-icon" width="18" height="18" src="./img/socials/LinkedIn.svg"
+                alt="LinkedIn icon">
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__link-icon" width="7" height="15" src="./img/socials/FB.svg" alt="FB icon">
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__link-icon" width="20" height="20" src="./img/socials/twitter.svg" alt="twitter icon">
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <img class="socials__link-icon" width="28" height="28" src="./img/socials/whatsapp.svg"
+                alt="whatsapp icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">All rights reserved. EuroLife</p>
+
+        <div class="footer__bottom-links">
+          <a class="footer__bottom-link" href="#">Privacy policy </a>
+          <a class="footer__bottom-link" href="#">Cookies</a>
+          <a class="footer__bottom-link footer__bottom-link--mla" href="#">
+            Project by
+            <img width="98" height="20" src="./img/freeblock-logo.svg" alt="freeblock logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

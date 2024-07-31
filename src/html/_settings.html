@@ -1,0 +1,103 @@
+<div class="settings">
+  <div class="container">
+    <div class="settings__inner">
+      <form class="settings__form" action="#">
+        <div class="settings__head">
+          <h2 class="settings__title">You can change settings of your account</h2>
+        </div>
+
+        <div class="settings__main">
+          <div class="settings__rows">
+            <div class="settings__row">
+              <label class="settings__label label" for="">Information</label>
+
+              <input class="settings__input input" type="text" placeholder="Name">
+              <input class="settings__input input" type="email" placeholder="Email">
+              <input class="settings__input input" type="tel" placeholder="Phone">
+            </div>
+
+            <div class="settings__row-border"></div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">Password</label>
+
+              <input class="settings__input input" type="password" placeholder="Old password">
+              <input class="settings__input input" type="password" placeholder="New password">
+              <input class="settings__input input" type="password" placeholder="Repeat new password">
+            </div>
+          </div>
+        </div>
+
+        <div class="settings__footer">
+          <button type="submit" class="settings__btn btn">SAVE</button>
+        </div>
+      </form>
+
+      <form class="settings__form" action="#">
+        <div class="settings__head">
+          <h2 class="settings__title">Write us a message!</h2>
+        </div>
+
+        <div class="settings__main">
+          <div class="settings__rows">
+            <div class="settings__row">
+              <label class="settings__label label" for="">Message Subject<sup>*</sup></label>
+
+              <select class="settings__input input input-select">
+                <option value="" disabled selected>Choose from the list...</option>
+                <option value="Choose 1">Choose 1</option>
+                <option value="Choose 2">Choose 2</option>
+              </select>
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">First name and last name<sup>*</sup></label>
+
+              <input class="settings__input input" type="text" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">E-mail<sup>*</sup></label>
+
+              <input class="settings__input input" type="email" placeholder="">
+            </div>
+
+            <div class="settings__row">
+              <label class="settings__label label" for="">Message</label>
+              <textarea class="settings__input input input-textarea" placeholder="Enter your message..."></textarea>
+            </div>
+
+            <div class="settings__row">
+              <div class="settings__checkbox checkbox">
+                <input class="settings__checkbox-input checkbox-input" type="checkbox" id="checkbox-1">
+                <label class="settings__checkbox-label checkbox-label" for="checkbox-1">
+                  <div class="settings__checkbox-decor checkbox-decor"></div>
+                  <p class="settings__checkbox-text checkbox-text">I consent to the processing of my personal data
+                    contained in the contact form by EuroLife in order to respond to the inquiry.</p>
+                </label>
+              </div>
+
+              <div class="settings__checkbox checkbox">
+                <input class="settings__checkbox-input checkbox-input" type="checkbox" id="checkbox-2">
+                <label class="settings__checkbox-label checkbox-label" for="checkbox-2">
+                  <div class="settings__checkbox-decor checkbox-decor"></div>
+                  <p class="settings__checkbox-text checkbox-text">I declare that my consent is voluntary. I am aware
+                    that I can withdraw my consent
+                    at any time.</p>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings__footer">
+          <button type="submit" class="settings__btn settings__btn--mla btn">
+            Send a message
+
+            <img width="24" height="24" src="./img/icons/arrow-right.svg" alt="arrow-right icon">
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,165 @@
+.settings {
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+
+  // margin-bottom: 140px;
+
+  // @media (max-width: $breakpoint992) {
+  //   margin-bottom: 40px;
+  // }
+
+  // @media (max-width: $breakpoint768) {
+  //   margin-bottom: 30px;
+  // }
+
+
+
+  // .settings__inner
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .settings__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px;
+    border-radius: 20px;
+    background-color: var(--white);
+
+    @media (max-width: $breakpoint1450) {
+      padding: 60px 40px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      padding: 40px 20px;
+    }
+  }
+
+  // .settings__head
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .settings__title
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--black);
+
+    @media (max-width: $breakpoint992) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .settings__main
+
+  &__main {}
+
+  // .settings__rows
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 10px;
+    }
+  }
+
+  // .settings__row
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+
+    @media (max-width: $breakpoint768) {
+      row-gap: 8px;
+    }
+  }
+
+  // .settings__label
+
+  &__label {}
+
+  // .settings__input
+
+  &__input {}
+
+  // .settings__row-border
+
+  &__row-border {
+    margin: 10px 0;
+    width: 100%;
+    height: 1px;
+    background-color: #b9b9b9;
+  }
+
+  // .settings__footer
+
+  &__footer {
+    margin-top: 20px;
+  }
+
+  // .settings__btn
+
+  &__btn {
+    width: fit-content;
+    min-width: fit-content;
+    padding: 10px 34px;
+
+    &--mla {
+      margin-left: auto;
+    }
+  }
+
+  // .settings__checkbox
+
+  &__checkbox {}
+
+  // .settings__checkbox-input
+
+  &__checkbox-input {}
+
+  // .settings__checkbox-label
+
+  &__checkbox-label {}
+
+  // .settings__checkbox-decor
+
+  &__checkbox-decor {}
+
+  // .settings__checkbox-text
+
+  &__checkbox-text {}
+}

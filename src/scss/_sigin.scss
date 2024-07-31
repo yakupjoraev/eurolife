@@ -1,0 +1,157 @@
+.sigin {
+  position: relative;
+  background-color: #0b0b0b;
+  min-height: 100vh;
+
+  // .sigin__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      flex-direction: column-reverse;
+      row-gap: 0;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 20px;
+    }
+
+  }
+
+  // .sigin__form
+
+  &__form {
+    flex: 0 1 680px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0b;
+
+    @media (max-width: 1200px) {
+      flex: 0 1 auto;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 0;
+      margin-top: 40px;
+      margin-bottom: auto;
+    }
+  }
+
+  // .sigin__head
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 32px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  // .sigin__title
+
+  &__title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .sigin__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--white);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+    }
+  }
+
+  // .sigin__rows
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  // .sigin__row
+
+  &__row {}
+
+  // .sigin__input
+
+  &__input {}
+
+  // .sigin__btn
+
+  &__btn {
+    width: 100%;
+  }
+
+  // .sigin__logo
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: auto;
+    }
+
+  }
+
+  // .sigin__logo-pic
+
+  &__logo-pic {
+    width: auto;
+    height: auto;
+
+    @media (max-width: 1200px) {
+      width: 300px;
+      height: auto;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 200px;
+    }
+  }
+}
+
+.main {
+
+  // .main__bg
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: calc(100vw - 700px);
+    object-fit: cover;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}

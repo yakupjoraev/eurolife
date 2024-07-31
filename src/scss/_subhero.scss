@@ -1,17 +1,24 @@
 .subhero {
   position: relative;
-  min-height: 500px;
+  height: 500px;
   margin-top: -114px;
   border-radius: 0 0 0 140px;
   background-color: var(--black);
 
   @media (max-width: $breakpoint992) {
     min-height: 400px;
+    height: auto;
     border-radius: 0 0 0 100px;
   }
 
   @media (max-width: $breakpoint768) {
     min-height: 300px;
+  }
+
+  &--profile {
+    .subhero__info {
+      padding-top: 140px;
+    }
   }
 
 
@@ -98,5 +105,60 @@
     @media (max-width: $breakpoint768) {
       width: 100px;
     }
+  }
+}
+
+.subhero {
+
+  // .subhero__form
+
+  &__form {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  // .subhero__form-file
+
+  &__form-file {}
+
+  // .subhero__file-input
+
+  &__file-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: -100;
+  }
+
+  // .subhero__file-label
+
+  &__file-label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  // .subhero__file-pic
+
+  &__file-pic {}
+
+  // .subhero__file-text
+
+  &__file-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+  // .subhero__file-btn
+
+  &__file-btn {
+    min-width: fit-content;
+    padding: 10px 36px;
   }
 }
