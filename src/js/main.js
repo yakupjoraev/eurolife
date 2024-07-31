@@ -51,3 +51,23 @@ function fixedNav() {
   }
 }
 window.addEventListener('scroll', fixedNav)
+
+
+function gallerySlider() {
+  const container = document.querySelector('.gallery');
+
+  if (!container) {
+    return null
+  }
+
+  const swiper = new Swiper('.gallery__slider', {
+    loop: true,
+    autoplay: {
+      delay: 0,
+    },
+    speed: 7000,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+  })
+}
+gallerySlider();
