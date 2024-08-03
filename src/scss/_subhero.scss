@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 220px 140px;
+    padding: 220px 80px;
 
     @media (max-width: $breakpoint992) {
       padding: 140px 0 100px;
@@ -90,7 +90,7 @@
 
   &__circkle {
     position: absolute;
-    right: 20%;
+    right: 14%;
     bottom: 0;
     height: auto;
 

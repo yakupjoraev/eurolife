@@ -87,7 +87,7 @@
     width: 738px;
     height: auto;
     background: var(--primary-gradient);
-    border-radius: 0 120px 0 120px;
+    border-radius: 0 200px;
 
     @media (max-width: 1500px) {
       width: 600px;
@@ -97,6 +97,7 @@
     @media (max-width: $breakpoint1450) {
       width: 90%;
       margin: 0 auto;
+      border-radius: 0 120px;
     }
 
     @media (max-width: $breakpoint992) {

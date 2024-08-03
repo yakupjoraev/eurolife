@@ -7,7 +7,16 @@
   // .hero__inner
 
   &__inner {
-    padding: 200px 0;
+    padding: 280px 0 120px;
+
+
+    @media (max-width: $breakpoint1450) {
+      padding: 200px 0 120px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      padding: 160px 0 120px;
+    }
   }
 
   // .hero__info
@@ -16,7 +25,7 @@
     position: relative;
     z-index: 1;
 
-    max-width: 1000px;
+    max-width: 1040px;
     height: auto;
     padding-left: 40px;
     border-left: 2px solid #00953e;
