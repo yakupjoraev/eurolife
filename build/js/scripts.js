@@ -142,6 +142,11 @@ for (let anchor of anchors) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.countdown');
+  if (!container) {
+    return null
+  }
+
   const getStoredEndDate = () => {
     return parseInt(localStorage.getItem('countdownEndDate'), 10);
   };

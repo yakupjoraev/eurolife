@@ -21,6 +21,12 @@
     }
   }
 
+  .socials {
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
 
   // .subhero__inner
 
